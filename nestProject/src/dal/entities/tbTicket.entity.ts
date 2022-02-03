@@ -9,14 +9,14 @@ export class tbTicket{
     @Column()
     name :string
 
-    @Column()
+    @Column({type:"longtext" ,nullable: true})
     description : string
 
     @Column()
     email : string
 
     @Column()
-    phoneNumber : number
+    phoneNumber : string
 
     @Column()
     status : string

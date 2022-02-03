@@ -1,8 +1,13 @@
 import { ApiProperty } from '@nestjs/swagger'
 import { IsNotEmpty, IsNumber, IsString, ValidateNested } from 'class-validator'
 
-export class CreateTicketDTO {
+export class UpdateTicketDTO {
 
+    @IsNotEmpty()
+    @ApiProperty({
+        description: 'this is description for id field',
+    })
+    readonly id: number
 
     @IsNotEmpty()
     @IsString()

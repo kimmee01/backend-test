@@ -3,7 +3,7 @@ export interface ITicketModel {
     name :string
     description : string
     email : string
-    phoneNumber : number
+    phoneNumber : string
     status : string
     createDated : Date,
     updateDated : Date
